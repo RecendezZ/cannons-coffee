@@ -1,15 +1,19 @@
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* BASIC FORMATTING */
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
+ 
 img {
   max-width: 100%;
 }
@@ -17,27 +21,174 @@ img {
 body {
   font-family: Poppins;
   font-size: 1.125rem;
-  color: black;
-  background-color: #063270;
+  
+  background-color: #cadbf8;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
+
 
 main {
   background-color: white;
   border-bottom: 5px solid #ffd034;
   border-top: 5px solid #ffd034;
 }
+
 header {
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
+  text-align: center;
+  border-bottom: 15px double #ffd034;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #06327d;
+  color: #ffffff;
+ }
+  
+nav ul {
+  color: white;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  
+  
 }
-h1 {
+  
+.hero {
+  background-color: #ffffff;
+}
+nav li a {
+  text-decoration: none;
+}
+
+nav a {
+  color: #ffffff;
+  list-style: none;
+  
+}
+
+a:hover {
+  color:#ffd034;
+}
+ 
+
+  h1 {
+  font-size: 3rem;
+  line-height: 1.1667;
+  margin: 0;
+  text-transform: upppercase;
   font-weight: 300;
 }
+
+
+h2 {
+font-size: 2.5rem;
+line-height: 1.1667;
+font-weight: 300;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.1667;
+  font-weight: 300;
+}
+
+
+
+footer {
+ 
+color: #ffffff;
+background-color:#06327d;
+border-top: 15px double #ffd034;
+
+
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2px;
+ 
+}
+
+
+.button-main {
+  margin-bottom: 2px;
+  padding-bottom: .5rem;
+  background-color: #209d5c;
+  border: 2px solid black;
+  padding: .5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+
+
+.blue-button {
+  padding: .5rem;
+  margin-bottom: 2px;
+  padding-bottom: .5rem;
+  background-color: #06327d;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.button-main:hover {
+  background-color: #ffd034;
+  color: #2b70e4;
+}
+
+.blue-button:hover {
+  background-color:#2b70e4;
+  color: #ffd034;
+}
+
+
+
+
+
+
+@media (max-width:1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+/*  
+Color name
+Hex value
+Black
+#000000
+Catalina
+#06327d
+Bluetiful
+#2b70e4
+Vegan
+#209d5c
+Sunglow
+#ffd034
+White
+#ffffff
+Light Blue
+ #cadbf8*/
+
+
