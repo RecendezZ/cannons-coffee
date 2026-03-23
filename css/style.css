@@ -1,4 +1,12 @@
+:root {
+  --primary-sunglow: #ffd034;
+  --secondary-white: #ffff;
+  --secondary-light-blue: #cadbf8;
+  --secondary-catalina:#06327d;
+  --secondary-bluetiful: #2b70e4;
+  --secondary-black: #000000;
 
+}
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -16,13 +24,15 @@ html {
  
 img {
   max-width: 100%;
+  border-radius: 30px;
+  margin: 3rem;
 }
 
 body {
   font-family: Poppins;
   font-size: 1.125rem;
   
-  background-color: #cadbf8;
+  background-color: var(--secondary-light-blue);
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -30,24 +40,25 @@ body {
 
 
 main {
-  background-color: white;
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
+  background-color: var(--secondary-white);
+  border-bottom: 5px solid var(--primary-sunglow);
+  border-top: 5px solid var(--primary-sunglow)
 }
 
 header {
   text-align: center;
-  border-bottom: 15px double #ffd034;
+  border-bottom: 15px solid var(--primary-sunglow);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row-wrap;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #06327d;
-  color: #ffffff;
+  background-color:var(--secondary-catalina);
+  color: var(--secondary-white);
+  
  }
   
 nav ul {
-  color: white;
+  color: var(--secondary-white);
   list-style: none;
   padding: 1rem;
   margin: 0;
@@ -57,29 +68,38 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
-  
+  }
+
+p {
+  margin: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
+
+.container {
+    max-width: 1200px;
+   margin: 0 auto;
+
   
 .hero {
-  background-color: #ffffff;
+  background-color: var(--secondary-white);
 }
 nav li a {
   text-decoration: none;
 }
 
 nav a {
-  color: #ffffff;
+  color: var(--secondary-white);
   list-style: none;
   
 }
 
 a:hover {
-  color:#ffd034;
+  color: var(--primary-sunglow);
 }
  
 
-  h1 {
+h1 {
   font-size: 3rem;
   line-height: 1.1667;
   margin: 0;
@@ -89,44 +109,44 @@ a:hover {
 
 
 h2 {
-font-size: 2.5rem;
-line-height: 1.1667;
-font-weight: 300;
+  margin: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.1667;
+  font-weight: 300;
 }
-
-h3 {
+  
+h3 {   
+  margin: 2rem;
   font-size: 1.75rem;
   line-height: 1.1667;
   font-weight: 300;
 }
-
+ 
 
 
 footer {
- 
-color: #ffffff;
-background-color:#06327d;
-border-top: 15px double #ffd034;
-
-
+  color: var(--secondary-white);
+  background-color: var(--secondary-catalina);
+  border-top: 15px solid var(--primary-sunglow);
   align-items: center;
   text-align: center;
-  padding-bottom: 2px;
- 
-}
-
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+} 
+     
 
 .button-main {
   margin-bottom: 2px;
   padding-bottom: .5rem;
   background-color: #209d5c;
-  border: 2px solid black;
+  border: 2px solid var(--secondary-black)black;
   padding: .5rem;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--secondary-white);
   border-radius: 10px;
-  margin-top: 2px;
+  margin-top: 2rem;
+  margin-left: 3rem;
   display: inline-block;
 }
 
@@ -136,30 +156,53 @@ border-top: 15px double #ffd034;
   padding: .5rem;
   margin-bottom: 2px;
   padding-bottom: .5rem;
-  background-color: #06327d;
-  border: 2px solid black;
+  background-color: var(--secondary-catalina);
+  border: 2px solid var(--secondary-black);
   font-size: 1.5rem;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--secondary-white);
   border-radius: 10px;
-  margin-top: 2px;
+  margin-top: 2rem;
+  margin-left: 2rem;
   display: inline-block;
 }
 
 .button-main:hover {
-  background-color: #ffd034;
-  color: #2b70e4;
+  background-color:var(--primary-sunglow);
+  color:var(--secondary-bluetiful);
 }
 
 .blue-button:hover {
-  background-color:#2b70e4;
-  color: #ffd034;
-}
+  background-color:var(--secondary-bluetiful);
+  color: var(--primary-sunglow);
 
 
+@media (min-width:650px) {
 
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  }
 
+  .card-container {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .container {
+    max-width: 1200px;
+   margin: 0 auto;
 
+  
+
+ }
 
 @media (max-width:1200px) {
 
@@ -173,22 +216,6 @@ border-top: 15px double #ffd034;
 
 
 
-/*  
-Color name
-Hex value
-Black
-#000000
-Catalina
-#06327d
-Bluetiful
-#2b70e4
-Vegan
-#209d5c
-Sunglow
-#ffd034
-White
-#ffffff
-Light Blue
- #cadbf8*/
+
 
 
