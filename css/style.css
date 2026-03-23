@@ -23,7 +23,7 @@ html {
 }
  
 img {
-  max-width: 100%;
+  max-width: 75%;
   border-radius: 30px;
   margin: 3rem;
 }
@@ -79,6 +79,7 @@ p {
 .container {
     max-width: 1200px;
    margin: 0 auto;
+}
 
   
 .hero {
@@ -196,15 +197,16 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-  .container {
-    max-width: 1200px;
-   margin: 0 auto;
 
   
 
  }
 
-@media (max-width:1200px) {
+@media (max-width:1000px) {
+    .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 
 }
 
