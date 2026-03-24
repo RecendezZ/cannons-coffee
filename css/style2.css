@@ -1,0 +1,38 @@
+root {
+  --primary-sunglow: #ffd034;
+  --secondary-white: #ffff;
+  --secondary-light-blue: #cadbf8;
+  --secondary-catalina:#06327d;
+  --secondary-bluetiful: #2b70e4;
+  --secondary-black: #000000;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* BASIC FORMATTING */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ 
+img {
+  max-width: 75%;
+  border-radius: 30px;
+  margin: 3rem;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.125rem;
+  
+  background-color: --secondary-catalina#06327d;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  }
