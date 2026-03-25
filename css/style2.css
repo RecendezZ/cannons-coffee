@@ -1,4 +1,4 @@
-root {
+:root {
   --primary-sunglow: #ffd034;
   --secondary-white: #ffff;
   --secondary-light-blue: #cadbf8;
@@ -21,18 +21,106 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+
+.nav-logo {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  color: var(--secondary-white);
  
+}
+h1 {
+  font-size: 3rem;
+  line-height: 1.1667;
+  margin: 0;
+  text-transform: upppercase;
+  font-weight: 300;
+  color: var(--secondary-white);
+  justify-content: center;
+}
+
+
+h2 {
+  margin: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.1667;
+  font-weight: 300;
+}
+  
+h3 {   
+  margin: 2rem;
+  font-size: 1.75rem;
+  line-height: 1.1667;
+  font-weight: 300;
+}
+
+nav ul a {
+  text-decoration: none;
+  list-style-type: none; 
+  color: var(--secondary-white);
+  
+}
+
+a:hover {
+  color: var(--primary-sunglow);
+}
 img {
+  display: flex;
+  flex-wrap: row-wrap;
   max-width: 75%;
-  border-radius: 30px;
   margin: 3rem;
 }
+.hero {
+  border-bottom: 15px solid var(--primary-sunglow);
+  border-top: 15px solid var(--primary-sunglow);
+  background-color: var(--secondary-white);
+  display: inline-block;
+  
+  margin: 2rem;
+  justify-content: space-between;
+  
+}
+
+.green-button {
+   background-color: #209d5c;
+  border: 2px solid var(--secondary-black)black;
+  padding: .5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--secondary-white);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.125rem;
   
-  background-color: --secondary-catalina#06327d;
+  
+  background-color: var(--secondary-catalina);
   margin: 0;
   padding: 0;
   line-height: 1.5;
   }
+
+
+footer {
+  color: var(--secondary-white);
+  background-color: var(--secondary-catalina);
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+} 
+ nav {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+ }

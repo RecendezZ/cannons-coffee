@@ -64,9 +64,9 @@ nav ul {
   padding: 3rem;
   margin-left: 2rem;
   display: flex;
-  flex-wrap: row-wrap;
+  flex-wrap: row wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
 
   }
@@ -143,8 +143,7 @@ footer {
      
 
 .button-main {
-  margin-bottom: 2px;
-  padding-bottom: .5rem;
+ 
   background-color: #209d5c;
   border: 2px solid var(--secondary-black)black;
   padding: .5rem;
@@ -186,9 +185,9 @@ footer {
 }
 
 
-@media (max-width:650px) {
+@media (min-width:650px) {
 
-     header {
+  nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
