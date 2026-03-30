@@ -25,7 +25,7 @@ html {
 
  
 img {
-  max-width: 800%;
+  max-width: 1000%;
   border-radius: 30px;
   margin: 3rem;
 }
@@ -33,7 +33,7 @@ img {
 body {
  font-family: "Nunito Sans", sans-serif;
   font-size: 1.125rem;
-background-color: var(--secondary-light-blue);
+
   
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ header {
    }
 
 main {
-  background-color: var(--secondary-light-blue);
+  background-color: var(--secondary-white);
   border-bottom: 5px solid var(--primary-sunglow);
   border-top: 5px solid var(--primary-sunglow);
 }
@@ -68,31 +68,29 @@ nav a {
   list-style-type: none;
   text-decoration: none;
 }
-.card-container {
-  
+.card {
   background-color: var(--secondary-light-blue);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 45px solid var(--secondary-light-blue);
-  max-width: 100rem;
+}
+/*.container {
+
+   margin: 0 auto;
+   width: max-content;
    justify-content: space-between;
    align-items: center;
    gap: 2rem;
+*/
 }
-
 
   
 .hero {
   background-color: var(--secondary-white);
-  flex-direction: flex-flow;
+  flex-direction: column;
   justify-content: center;
 
 
 }
 
-.card-5 {
-  background-color: var(--secondary-light-blue);
-}
+
  a:hover {
   color: var(--primary-sunglow);
 }
@@ -147,7 +145,7 @@ p {
 
 .blue-button {
   padding: .5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2px;
   padding-bottom: .5rem;
   background-color: var(--secondary-catalina);
   border: 2px solid var(--secondary-black);
@@ -175,7 +173,7 @@ p {
 footer {
   color: var(--secondary-white);
   background-color: var(--secondary-catalina);
-  border-top: 25px solid var(--primary-sunglow);
+  border-top: 15px solid var(--primary-sunglow);
   align-items: center;
   text-align: center;
   padding-bottom: 2rem;
@@ -186,9 +184,6 @@ footer {
 
 
 @media (min-width:650px) {
-  img {
-    max-height: 500%;
-    margin-left: 6rem;
 
   header {
 
@@ -196,54 +191,30 @@ footer {
     padding: 2rem;
   
   }
-/*.card-container {
+/* .hero {
   display: flex;
-flex-wrap: row-wrap;
-  gap: 7rem;
-  width: max-content;
-
+flex-wrap: space-between;
+  gap: 2rem;
   }*/
- .card-container {
-
+.card-container {
      display: grid;
      grid-template-columns: 1fr 1fr;
-   grid-row: 1/2 2/3;
-     column-gap: 20px;
-     
-     padding: 5rem;
-
+     grid-column: 1/2 1/2;
+     gap: 2rem;
   }
 
   
 
  }
 
-@media (max-width:1000px) 
-{
-  img {
-    max-height: 800%;
-    margin-left: 6rem;
-  }
-  main {
-    background-color: var(--secondary-catalina);
-  padding: 5rem;
-  }
+@media (min-width:1000px) {
     .card-container {
     display: grid;
-  
-   
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     background-color: var(--secondary-catalina);
-  }
 
-    footer {
-  color: var(--secondary-white);
-  background-color: var(--secondary-catalina);
-  border-top: 30px solid var(--primary-sunglow);
-  align-items: center;
-  text-align: center;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
+    .card
     }
   }
 
