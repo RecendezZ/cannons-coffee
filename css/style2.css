@@ -149,7 +149,6 @@ footer {
 
 @media (min-width:1000%) { 
 hero {
-  font-family: "Nunito Sans", sans-serif;
   font-size: 1.125rem;
   background-color: var(--secondary-white);
   margin: 7rem;

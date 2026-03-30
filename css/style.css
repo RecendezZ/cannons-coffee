@@ -5,7 +5,7 @@
   --secondary-catalina:#06327d;
   --secondary-bluetiful: #2b70e4;
   --secondary-black: #000000;
-
+  --secondary-vegan:#209d5c;
 }
 
 
@@ -148,7 +148,7 @@ p {
 } 
 
 .button-main {
-  background-color: #209d5c;
+  background-color: var(--secondary-vegan);
   border: 2px solid var(--secondary-black)black;
   padding: .5rem;
   font-size: 1.5rem;
@@ -210,11 +210,9 @@ footer {
     max-height: 300%;
     margin: 4rem;
     }
-  
-@media (min-width: 650px) {
   .hero-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
 }
