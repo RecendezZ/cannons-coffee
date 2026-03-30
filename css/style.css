@@ -25,26 +25,32 @@ html {
 
  
 img {
-  max-width: 800%;
-  border-radius: 30px;
+  max-width: 900%;
+  border-radius: 10px;
   margin: 3rem;
 }
 
 body {
  font-family: "Nunito Sans", sans-serif;
   font-size: 1.125rem;
-background-color: var(--secondary-light-blue);
-  
+  background-color: var(--secondary-white);
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
 header {
-  display: flex;
   border-bottom: 15px solid var(--primary-sunglow);
   background-color:var(--secondary-catalina);
   color: var(--secondary-white);
+   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  text-decoration: none;
   
    }
 
@@ -58,15 +64,22 @@ main {
   
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   color: var(--secondary-white);
   list-style: none;
   gap: 3rem;
   }
+nav li {
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
 
+}
 nav a {
   color: var(--secondary-white);
   list-style-type: none;
   text-decoration: none;
+   
 }
 .card-container {
   
@@ -75,17 +88,24 @@ nav a {
   padding-bottom: 3rem;
   border-bottom: 45px solid var(--secondary-light-blue);
   max-width: 100rem;
-   justify-content: space-between;
-   align-items: center;
-   gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
   
 .hero {
   background-color: var(--secondary-white);
-  flex-direction: flex-flow;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
 
 
 }
@@ -178,63 +198,58 @@ footer {
   border-top: 25px solid var(--primary-sunglow);
   align-items: center;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-top: 2rem;
 } 
      
 
+ /* home (phones, 600px and down) */
 
-
-@media (min-width:650px) {
+@media (min-width: 650px) {
   img {
-    max-height: 500%;
-    margin-left: 6rem;
-
-  header {
-
-    justify-content: center;
-    padding: 2rem;
+    max-height: 300%;
+    margin: 4rem;
+    }
   
+@media (min-width: 650px) {
+  .hero-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
-/*.card-container {
-  display: flex;
-flex-wrap: row-wrap;
-  gap: 7rem;
-  width: max-content;
-
-  }*/
- .card-container {
-
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-   grid-row: 1/2 2/3;
-     column-gap: 20px;
-     
-     padding: 5rem;
-
+@media (min-width: 1000px) {
+  header {
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    gap: 0rem;
+    margin: 0rem;
+    background-color: var(--secondary-catalina);
+    align-content: center;
   }
+  .logo {
+    margin: 0rem;
+    margin-top: 1.5rem;
+  }
+}
 
-  
+    }
+ 
 
- }
+@media (min-width: 1000px) {
 
-@media (max-width:1000px) 
-{
   img {
-    max-height: 800%;
+    max-height: 300px;
     margin-left: 6rem;
   }
   main {
     background-color: var(--secondary-catalina);
-  padding: 5rem;
-  }
-    .card-container {
-    display: grid;
-  
-   
-    gap: 2rem;
-    background-color: var(--secondary-catalina);
+   }
+    
+   .card-container {
+  background-color: var(--secondary-catalina);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    
   }
 
     footer {

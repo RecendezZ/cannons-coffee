@@ -42,6 +42,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
+
 }
 
 
@@ -64,6 +65,10 @@ nav ul {
   list-style-type: none;
   padding: 1rem;
   margin: 0;
+  display: flex; 
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
   /*flex layout for navbar*/
   
 }
@@ -76,8 +81,6 @@ nav ul {
   gap: 1rem;
   padding: 0;
  
-  display: flex;
-  flex-flow: row-wrap;
 }
 
 
